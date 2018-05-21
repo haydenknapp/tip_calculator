@@ -1,9 +1,7 @@
 #calculator {
 	border: 1px solid blue;
 	border-radius: 5px;
-	padding-bottom: 1%;
-	padding-top: 1%;
-	padding-left: 1%;
+	padding-left: 0%;
 	list-style-type: none;
 	width: 125px;
 }
@@ -11,15 +9,13 @@
 #calcTitle {
 	background-color: blue;
 	color: white;
-	border-radius: 5px;
-	padding-left: 1%;
-	padding-top: 1%;
-	padding-right: 1%;
+	text-align: center;
 }
 
 .fieldTitles {
 	color: rgba(32, 32, 32, 32);
 	font-size: 8px;
+	margin-left: 5px;
 }
 
 .clickable {
@@ -28,21 +24,24 @@
 	text-decoration: none;
 	margin-right: 0%;
 	margin-left: 0%;
+	margin: 0px;
 }
+
 
 .fieldTable {
 	border: 1px solid grey;
-	border-radius: 5px;
-	margin-right: 5px;
-	margin-left: 5px;
-	border-collapse: collapse;
-	border-radius: 5px;
+	border-radius: 4px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 0px;
 }
 
 #billInput {
 	text-align: center;
 	width: 100px;
+	margin-left: 5px;
 }
+
 
 body {
 	font-family: arial;
@@ -55,10 +54,12 @@ body {
 
 .smallResult {
 	font-size: 16px;
+	margin-left: 5px;
 }
 
 .smallResultMinor {
 	font-size: 8px;
+	margin-left: 5px;
 }
 
 .smallResultTd {

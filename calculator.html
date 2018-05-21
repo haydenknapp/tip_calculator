@@ -7,40 +7,40 @@
 	<body onload="updateAll()">
 		<ul id="calculator">
 			<li id="calcTitle">
-			Tip Calculator
+				Tip Calculator
 			</li>
 			<li>
-			<span class="fieldTitles">Bill</span>
+				<span class="fieldTitles">Bill</span>
 			</li>
 			<li>
-			<input type='text' id='billInput' value="$20.00" onkeyup="changeCents()">
+				<input type='text' id='billInput' value="$20.00" onkeyup="changeCents()">
 			</li>
 			<li>
-			<span class="fieldTitles">Tip %</span>
+				<span class="fieldTitles">Tip %</span>
 			</li>
 			<li>
-			<table class="fieldTable">
-				<tr>
-					<th class="clickable"><button class="clickable" onclick="minusPercent()">-</button></th>
-					<th class="inputs"><span id="tipPercent">20%</span></th>
-					<th class="clickable"><button class="clickable" onclick="plusPercent()">+</button></th>
-				</tr>
-			</table>
+				<table class="fieldTable">
+					<tr>
+						<th class="clickable"><button class="clickable" onclick="minusPercent()">-</button></th>
+						<th class="inputs"><span id="tipPercent">20%</span></th>
+						<th class="clickable"><button class="clickable" onclick="plusPercent()">+</button></th>
+					</tr>
+				</table>
 			</li>
 			<li>
-			<span class="fieldTitles">Number of people</span>
+				<span class="fieldTitles">Number of people</span>
 			</li>
 			<li>
-			<table class="fieldTable">
-				<tr>
-					<th class="clickable"><button class="clickable" onclick="minusPeople()">-</button></th>
-					<th class="inputs"><span id="numPeople">4</span></th>
-					<th class="clickable"><button class="clickable" onclick="plusPeople()">+</button></th>
-				</tr>
-			</table>
+				<table class="fieldTable">
+					<tr>
+						<th class="clickable"><button class="clickable" onclick="minusPeople()">-</button></th>
+						<th class="inputs"><span id="numPeople">4</span></th>
+						<th class="clickable"><button class="clickable" onclick="plusPeople()">+</button></th>
+					</tr>
+				</table>
 			</li>
 			<li>
-			<table>
+			<table class="resultsTable">
 				<tr>
 					<td class="smallResultTd"><span class="smallResult">Tip</span><br><span class="smallResultMinor">per person</span></td>
 					<td class="smallResultValue" id="tipPerPerson">$2.62</td>

@@ -3,9 +3,10 @@ var nPeople = 4;
 var totalInCents = 5235;
 
 function centsFloatToDollarsAndCents(value) {
+	Math.round(value);
 	var ret = '$' + parseInt(String(value / 100)) + '.' + parseInt(String(value + 0.05)) % 100;
-//	if (ret.length - ret.indexOf('.') < 3)
-//		ret += '0';
+	if (ret.length - ret.indexOf('.') < 3)
+		ret += '0';
 	return ret;
 }
 
@@ -14,9 +15,9 @@ function changeDollarResult(resultId, valueFloat) {
 }
 
 function updateAll() {
-	var tipTotal = totalInCents * percent / 100;
-	changeDollarResult("tipPerPerson", tipTotal / nPeople);
-	changeDollarResult("totalPerPerson", totalInCents / nPeople + tipTotal / nPeople);
+	var tipTotal = Math.round(totalInCents * percent / 100);
+	changeDollarResult("tipPerPerson", Math.round(tipTotal / nPeople));
+	changeDollarResult("totalPerPerson", Math.round(totalInCents / nPeople) + Math.round(tipTotal / nPeople));
 	changeDollarResult("fullAmount", totalInCents + tipTotal);
 }
 
@@ -74,7 +75,7 @@ function setPeople() {
 }
 
 function minusPeople() {
-	if (nPeople > 0)
+	if (nPeople > 1)
 		--nPeople;
 	setPeople();
 	updateAll();
