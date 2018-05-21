@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
 	<head>
+		<script src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
-	<body>
+	<body onload="updateAll()">
 		<ul id="calculator">
 			<li id="calcTitle">
 			Tip Calculator
@@ -12,7 +13,7 @@
 			<span class="fieldTitles">Bill</span>
 			</li>
 			<li>
-			<input type='text' class='billInput' value="$20.00">
+			<input type='text' id='billInput' value="$20.00" onkeyup="changeCents()">
 			</li>
 			<li>
 			<span class="fieldTitles">Tip %</span>
@@ -20,9 +21,9 @@
 			<li>
 			<table class="fieldTable">
 				<tr>
-					<th class="clickable"><button class="clickable ">-</button></th>
+					<th class="clickable"><button class="clickable" onclick="minusPercent()">-</button></th>
 					<th class="inputs"><span id="tipPercent">20%</span></th>
-					<th class="clickable"><button class="clickable">+</button></th>
+					<th class="clickable"><button class="clickable" onclick="plusPercent()">+</button></th>
 				</tr>
 			</table>
 			</li>
@@ -32,9 +33,9 @@
 			<li>
 			<table class="fieldTable">
 				<tr>
-					<th class="clickable"><button class="clickable ">-</button></th>
-					<th class="inputs"><span id=numPeople">4</span></th>
-					<th class="clickable"><button class="clickable">+</button></th>
+					<th class="clickable"><button class="clickable" onclick="minusPeople()">-</button></th>
+					<th class="inputs"><span id="numPeople">4</span></th>
+					<th class="clickable"><button class="clickable" onclick="plusPeople()">+</button></th>
 				</tr>
 			</table>
 			</li>
@@ -42,9 +43,20 @@
 			<table>
 				<tr>
 					<td class="smallResultTd"><span class="smallResult">Tip</span><br><span class="smallResultMinor">per person</span></td>
-					<td>$2.62</td>
+					<td class="smallResultValue" id="tipPerPerson">$2.62</td>
+				</tr>
 				<tr>
+					<td class="smallResultTd"><span class="smallResult">Total</span><br><span class="smallResultMinor">per person</span></td>
+					<td class="smallResultValue" id="totalPerPerson">$2.62</td>
+				</tr>
+
 			</table>
+			</li>
+			<li style="text-align: center; font-size: 13px;">
+				Full Amount
+			</li>
+			<li style="text-align: center;" id="fullAmount">
+				$62.84
 			</li>
 		</ul>
 	</body>

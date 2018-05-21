@@ -39,7 +39,7 @@
 	border-radius: 5px;
 }
 
-.billInput {
+#billInput {
 	text-align: center;
 	width: 100px;
 }
@@ -63,3 +63,8 @@ body {
 
 .smallResultTd {
 	line-height: 9px;
+}
+
+.smallResultValue {
+	float: left;
+}
