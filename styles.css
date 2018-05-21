@@ -1,0 +1,47 @@
+#calculator {
+	border: 1px solid blue;
+	border-radius: 5px;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-left: 1%;
+}
+
+#calcTitle {
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-right: 1%;
+}
+
+.fieldTitles {
+	color: rgba(32, 32, 32, 32);
+	font-size: 8px;
+}
+
+.clickable {
+	background-color: grey;
+	border: none;
+	text-decoration: none;
+	margin-right: 0%;
+	margin-left: 0%;
+}
+
+.fieldTable {
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border-collapse: collapse;
+	border-radius: 5px;
+}
+
+.billInput {
+	text-align: center;
+	width: 100px;
+}
+
+body {
+	font-family: arial;
+}
